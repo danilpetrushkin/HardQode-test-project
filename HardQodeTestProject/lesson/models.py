@@ -6,11 +6,18 @@ class Product(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
 
+    def __str__(self):
+        return self.owner.username
+
+
 class Lesson(models.Model):
     products = models.ManyToManyField(Product)
     title = models.CharField(max_length=80)
     video_link = models.URLField()
     view_duration = models.IntegerField()
+
+    def __str__(self):
+        return self.title
 
 
 class LessonWatch(models.Model):
