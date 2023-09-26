@@ -1,7 +1,7 @@
 
 
 ## Установка ##
-1. Клонировать репозиторий: git clone https://github.com/danilpetrushkin/HardQode-test-project.git
+1. Клонировать репозиторий: git clone https://github.com/danypet2/HardQode-test-project
 2. Установить зависимости: pip install -r requirements.txt
 3. Авторизуйтесь перейдя по адресу: http://localhost:8000/admin/
 
